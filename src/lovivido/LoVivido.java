@@ -8,23 +8,25 @@ import javax.swing.JOptionPane;
 
 public class LoVivido {
 
-public static void main(String[] args) {
-String n;
-String e;
+//aqui hacemos el calculo del mes, dia y hora
+    
+public static int calculoMes(int anho){
+        return (anho * 12);
+    }
+    public static int calculoDia(int anho){
+        return (anho * 365);
+    }
+     public static int calculoHora(int dia){
+        return (dia * 24);
+    }
 
-int m;
-int d;
-int h;
-int a;
 
 n = JOptionPane.showInputDialog ("Escriba su nombre: ");
 e = JOptionPane.showInputDialog ("Escriba su edad: ");
  
 a = Integer.parseInt (e);
  
-m = (a*12);
-d = (a*365);
-h = (d*24);
+
  
  JOptionPane.showMessageDialog(null,  "Meses: "  +m,"Numero de meses vividos de " +n,JOptionPane.INFORMATION_MESSAGE);
 
